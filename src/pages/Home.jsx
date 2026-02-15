@@ -9,9 +9,9 @@ const Home = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const res = await fetch(
-          "https://gnews.io/api/v4/search?q=AI&lang=en&max=1&apikey=387b4ab3dfad04d53e862ec2b5253bb7"
-        )
+       const res = await fetch(
+  `https://gnews.io/api/v4/search?q=AI&lang=en&max=1&apikey=${import.meta.env.VITE_GNEWS_API_KEY}`
+)
         const data = await res.json()
 
         if (data.articles && data.articles.length > 0) {
