@@ -10,7 +10,7 @@ const projects = [
     status: "active",
   },
   {
-    title: "amankumar.ai Website",
+    title: "portfolio Website",
     description:
       "Crafted from scratch with Next.js, TailwindCSS and modern UI principles.",
     image: "https://via.placeholder.com/800x500",
